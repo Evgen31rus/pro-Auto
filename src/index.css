@@ -1,0 +1,243 @@
+html{
+  background-color: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.shadow-element{
+  -webkit-box-shadow: 9px 14px 100px 100px rgba(0, 0, 0, 0.83) inset;
+  -moz-box-shadow: 9px 14px 100px 100px rgba(0, 0, 0, 0.83) inset;
+  box-shadow: 9px 14px 100px 100px rgba(0, 0, 0, 0.83) inset;
+}
+
+.gradient{
+  background: linear-gradient(90deg, #C53720 0%, rgba(197, 55, 32, 0) 96.86%);
+  z-index: 10;
+  transition-duration: 500ms;
+
+}
+
+.triangle{
+  clip-path: polygon(100% 0%, 0% 50%, 100% 100%)
+}
+
+.png {
+  position: relative;
+  background-image: url('./img/551ae813ecad043145f7348e\ 1.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: 320px;
+}
+
+.png:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+  position: absolute;
+  background-image: url('./img/squareSpecialist.png');
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: screen;
+}
+.loader {
+  color: #000000;
+  position: relative;
+  display: block;
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  letter-spacing: 4px;
+  box-sizing: border-box;
+}
+.loader::before {
+  content: '';  
+  position: absolute;
+  right: 70.5px;
+  bottom: 13px;
+  height: 28px;
+  width: 4.50px;
+  background: currentColor;
+  box-sizing: border-box;
+  animation: animloader1 1s linear infinite alternate;
+}
+.loader::after {
+  content: '';  
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 125px;
+  top: 2px;
+  border-radius: 50%;
+  background: red;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite alternate;
+}
+
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.opasity-enter {
+  opacity: 0;
+  transform: scale(0.0);
+}
+.opasity-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.opasity-exit {
+  opacity: 1;
+}
+.opasity-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* This fires as soon as the element enters the DOM*/
+.list-transition-enter {
+  /*We give the list the initial dimension of the list button*/
+  top: 0;
+  width: 120px;
+  max-height: 40px;
+  color: transparent;
+  background-color: #5a564c;
+  opacity: 0;
+  }
+  /* This is where we can add the transition*/
+  .list-transition-enter-active {
+  top: 45px;
+  width: 200px;
+  max-height: 200px;
+  background-color: #9e8949;
+  transition: all 400ms;
+  opacity: 0.5;
+  }
+  /* This fires as soon as the this.state.showList is false */
+  .list-transition-exit {
+  top: 45px;
+  width: 200px;
+  max-height: 200px;
+  background-color: #9e8949;
+  opacity: 1;
+  transition: all 400ms;
+  }
+  /* fires as element leaves the DOM*/
+  .list-transition-exit-active {
+  top: 0;
+  width: 120px;
+  max-height: 40px;
+  color: transparent;
+  background-color: #5a564c;
+  transition: all 400ms;
+  opacity: 0;
+  
+  }
+
+
+@keyframes animloader {
+  0% {
+    transform: translate(0px, 0px) scaleX(1);
+  }
+  14% {
+    transform: translate(-12px, -16px) scaleX(1.05);
+  }
+  28% {
+    transform: translate(-27px, -28px) scaleX(1.07);
+  }
+  42% {
+    transform: translate(-46px, -35px) scaleX(1.1);
+  }
+  57% {
+    transform: translate(-70px, -37px) scaleX(1.1);
+  }
+  71% {
+    transform: translate(-94px, -32px) scaleX(1.07);
+  }
+  85% {
+    transform: translate(-111px, -22px) scaleX(1.05);
+  }
+  100% {
+    transform: translate(-125px, -9px) scaleX(1);
+  }
+}
+
+@keyframes animloader1 {
+  0% {
+    box-shadow: 0 -6px, -122.9px -8px;
+  }
+  25%, 75% {
+    box-shadow: 0 0px, -122.9px -8px;
+  }
+  100% {
+    box-shadow: 0 0px, -122.9px -16px;
+  }
+}
+
+.loaderSpiner {
+  width: 40px;
+  height: 40px;
+  border: 10px solid #ffffff;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  display:flex;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+
+  .input::after{
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+opacity: 0;
+display: flex;
+z-index: 30;
+cursor: pointer;
+  }
+
+  @media screen and (max-width: 640px) {
+    html{
+      font-size: 84%
+    }
+  }
+
