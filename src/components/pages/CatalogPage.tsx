@@ -25,7 +25,7 @@ export default function CatalogPage(){
 
 return(
     <CSSTransition in={show} timeout={300} classNames={`alert`}>
-    <div className={`flex flex-col w-[100%] min-h-[1300px] items-center bg-[#EDEDED] pb-10 sm:min-h-[800px]`}>
+    <div className={`flex flex-col w-[100%] min-h-[1300px] items-center bg-[#EDEDED] pb-10 sm:min-h-[800px] sm:overflow-x-scroll `}>
      <h1 className={`relative flex w-[300px] text-center justify-center text-[2.5rem] text-black border-b-[#C53720] border-b-[3px] pb-2 uppercase pt-10
 sm:w-[100%]`}>КАТАЛОГ</h1>
            <div className={`flex w-[100%] h-[30px] m-2 justify-between`}>
@@ -46,7 +46,7 @@ sm:w-[100%]`}>КАТАЛОГ</h1>
 
 
            </div>
-    <div className={`flex w-[100%] h-[80%] justify-around sm:flex-col sm:h-[100%] relative`}>
+    <div className={`flex w-[100%] h-[80%] justify-around sm:flex-col sm:h-[100%] relative sm:justify-start`}>
     <Filter/>
 
     <CatalogBar stateViow={isClick}/>

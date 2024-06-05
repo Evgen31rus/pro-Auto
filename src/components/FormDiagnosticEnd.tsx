@@ -17,7 +17,7 @@ export default function FormDiagnosticEnd(){
             >
             </div>
             <p className={`text-[1.2rem]`}>Ваша заявка успешна отправленна, скоро с вами свяжется наш специолист!</p>
-<Link to={`/`} className={`w-[15%] h-[40px]`}><MainButton textContent={`НА ГЛАВНУЮ`} textColor={`#C53720`}/></Link>
+<Link to={`/`} className={`w-[15%] h-[40px] `}><MainButton textContent={`НА ГЛАВНУЮ`} textColor={`#C53720`}/></Link>
         </div>
         </CSSTransition>
     )

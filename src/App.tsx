@@ -13,11 +13,14 @@ import BurgerMenu from './components/BurgerMenu';
 
 
 
+
 function App() {
+
   const isOpenModal = useSelector((state:RootState)=>state.SliceModal.modal.status)
   return (
 
     <div className="relative w-[100%] overflow-y-hidden flex-col flex items-center bg-black font-medium ">
+
       <BurgerMenu/>
       
 <div className='w-[100%] flex justify-center flex-col items-center sm:hidden'>

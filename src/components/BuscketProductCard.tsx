@@ -53,7 +53,7 @@ if(count<10){
       
         <>
           <div
-            className={`flex  w-[19%] h-[50%] bg-cover bg-center m-auto`}
+            className={`flex  w-[19%] h-[50%] bg-cover bg-center m-auto `}
             style={{
               backgroundImage: `url(${product.photo})`,
             }}
@@ -61,7 +61,7 @@ if(count<10){
           <div
             className={`flex flex-col w-[30%] h-[100%] items-center justify-center ml-3 text-center`}
           >
-            <h1 className={`text-[1.5rem] text-[#C53720] font-medium mb-3`}>
+            <h1 className={`text-[1.5rem] text-[#C53720] font-medium mb-3 `}>
               {product.name}
             </h1>
             <div
@@ -71,7 +71,7 @@ if(count<10){
             </div>
           </div>
           <div
-            className={`flex flex-col w-[25%] h-[100%] items-center justify-center`}
+            className={`flex flex-col w-[25%] h-[100%] items-center justify-center `}
           >
             <h2 className={`text-[1.5rem] text-black font-medium mb-3`}>
               {product.price} руб.

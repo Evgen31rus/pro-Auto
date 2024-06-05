@@ -155,7 +155,7 @@ maxLength: {value:15, message: 'Поле не может превышать бо
             className={`flex  flex-row-reverse w-[100%] h-[80px] items-center justify-between`}
           >
             <div
-              className={`w-[40%] h-[40px] border-[2px] border-[#C53720] mt-3`}
+              className={`w-[40%] h-[40px] border-[2px] border-[#C53720] mt-3 sm:w-[50%]`}
             >
               <MainButton
                 textColor={"[#C53720]"}

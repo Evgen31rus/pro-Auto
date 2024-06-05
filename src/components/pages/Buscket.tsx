@@ -22,9 +22,9 @@ export default function Buscket(){
 
     return(
         <CSSTransition in={show} timeout={300} classNames={`alert`}>
-        <div className={`flex flex-col justify-around items-center w-[100%] min-h-[500px] bg-[#EDEDED]`}>
+        <div className={`flex flex-col justify-around items-center w-[100%] min-h-[500px] bg-[#EDEDED] sm:mt-10`}>
             <h1 className={`w-[80%] text-[2.5rem] font-bold text-start sm:text-center`}>Корзина</h1>
-            <div className={`w-[80%] min-h-[300px] bg-white border-[3px]`}>
+            <div className={`w-[80%] min-h-[300px] bg-white border-[3px] sm:w-[100%]`}>
             {
                 state.productsInBasket.length?
 
@@ -38,7 +38,7 @@ export default function Buscket(){
    <>
    <div className={`flex w-[100%] h-[80px] border-[3px] border-t-0`}>
     <div  className={`w-[50%] h-[100%] flex justify-start  items-center ml-10`}>
-<div className={`w-[42%] h-[60%] flex justify-center items-center`}
+<div className={`w-[42%] h-[60%] flex justify-center items-center sm:w-[80%]`}
 onClick={()=>dispatch(HandleRemoveAllProducts())}
 >
     <MainButton textColor="[#C53720]" textContent="ОЧИСТИТЬ СПИСОК"/>
@@ -50,10 +50,10 @@ onClick={()=>dispatch(HandleRemoveAllProducts())}
 </div>
 </div>
 <div className={`w-[100%] h-[80px] border-[3px] border-t-0 flex justify-between items-center`}>
-<Link to={`/Каталог`} className={`w-[20%] h-[60%] flex justify-center items-center ml-10`}>
+<Link to={`/Каталог`} className={`w-[20%] h-[60%] flex justify-center items-center ml-10 sm:w-[35%]`}>
     <MainButton textColor="[#C53720]" textContent="К ПОКУПКАМ"/>
 </Link>
-<Link to={'/Оформить_заказ'} className={`w-[20%] h-[60%] flex justify-center items-center mr-10`}>
+<Link to={'/Оформить_заказ'} className={`w-[20%] h-[60%] flex justify-center items-center mr-10 sm:w-[35%]`}>
     <MainButton textColor="[#C53720]" textContent="ОФОРМИТЬ ЗАКАЗ"/>
 </Link>
 </div>

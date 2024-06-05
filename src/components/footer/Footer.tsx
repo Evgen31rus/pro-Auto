@@ -20,7 +20,7 @@ export default function Footer(){
     const menu =['ГЛАВНАЯ', 'КАТАЛОГ', 'УСЛУГИ', 'ИНФОРМАЦИЯ', 'ЗАКАЗАТЬ ЗВОНОК']
     return(
         <div className={`flex w-[100%] max-w-[1200px] h-[400px] bg-cover bg-center justify-around p-10 text-[0.8rem]
-        sm:flex-col sm:items-center
+        sm:flex-col sm:items-center sm:pt-5 sm:h-[500px]
         `}
         style={{
             backgroundImage: `url(${footerPNG})`
