@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pro-Auto/static/css/main.82eae47b.css",
-    "main.js": "/pro-Auto/static/js/main.28dfc688.js",
+    "main.css": "/pro-Auto/static/css/main.c3202654.css",
+    "main.js": "/pro-Auto/static/js/main.3adb3613.js",
     "static/js/453.fd2e3383.chunk.js": "/pro-Auto/static/js/453.fd2e3383.chunk.js",
     "static/media/mainBaner.png": "/pro-Auto/static/media/mainBaner.f6d20a885b7109be0a2e.png",
     "static/media/баннер 404 2.png": "/pro-Auto/static/media/баннер 404 2.1f749dceeee329a95993.png",
@@ -50,12 +50,12 @@
     "static/media/closeModal.svg": "/pro-Auto/static/media/closeModal.f2859e95aebb5e1a8a754c4110b8f9bd.svg",
     "static/media/laptop.svg": "/pro-Auto/static/media/laptop.ef7117d4da9536a56f03fc964de27df5.svg",
     "static/media/arrowCatalog.svg": "/pro-Auto/static/media/arrowCatalog.6a888f55da04b01969c505215da4d659.svg",
-    "main.82eae47b.css.map": "/pro-Auto/static/css/main.82eae47b.css.map",
-    "main.28dfc688.js.map": "/pro-Auto/static/js/main.28dfc688.js.map",
+    "main.c3202654.css.map": "/pro-Auto/static/css/main.c3202654.css.map",
+    "main.3adb3613.js.map": "/pro-Auto/static/js/main.3adb3613.js.map",
     "453.fd2e3383.chunk.js.map": "/pro-Auto/static/js/453.fd2e3383.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82eae47b.css",
-    "static/js/main.28dfc688.js"
+    "static/css/main.c3202654.css",
+    "static/js/main.3adb3613.js"
   ]
 }
