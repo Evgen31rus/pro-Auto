@@ -22,8 +22,8 @@ export default function Buscket(){
 
     return(
         <CSSTransition in={show} timeout={300} classNames={`alert`}>
-        <div className={`flex flex-col justify-around items-center w-[100%] min-h-[500px] bg-[#EDEDED] sm:mt-10`}>
-            <h1 className={`w-[80%] text-[2.5rem] font-bold text-start sm:text-center`}>Корзина</h1>
+        <div className={`flex flex-col justify-around items-center w-[100%] min-h-[500px] bg-[#EDEDED] sm:mt-10 sm:mb-10`}>
+            <h1 className={`w-[80%] text-[2.5rem] font-bold text-start sm:text-center sm:mb-5`}>Корзина</h1>
             <div className={`w-[80%] min-h-[300px] bg-white border-[3px] sm:w-[100%]`}>
             {
                 state.productsInBasket.length?
@@ -36,17 +36,17 @@ export default function Buscket(){
 }{
    state.productsInBasket.length?
    <>
-   <div className={`flex w-[100%] h-[80px] border-[3px] border-t-0`}>
-    <div  className={`w-[50%] h-[100%] flex justify-start  items-center ml-10`}>
+   <div className={`flex w-[100%] h-[80px] border-[3px] border-t-0 sm:flex-col sm:h-[150px]`}>
+    <div  className={`w-[50%] h-[100%] flex justify-start  items-center ml-10 sm:justify-center sm:w-[100%] sm:ml-0`}>
 <div className={`w-[42%] h-[60%] flex justify-center items-center sm:w-[80%]`}
 onClick={()=>dispatch(HandleRemoveAllProducts())}
 >
     <MainButton textColor="[#C53720]" textContent="ОЧИСТИТЬ СПИСОК"/>
 </div>
 </div>
-<div  className={`w-[50%] h-[100%] flex justify-around items-center`}>
+<div  className={`w-[50%] h-[100%] flex justify-around items-center sm:flex-col sm:w-[100%]`}>
 <span className={`text-[#A5A5A5] font-bold`}>Итого {count} товара</span>
-<span className={`text-[#1D1D1D] font-bold text-[2.0rem]`}>{[...state.array.map(el=>el.count * el.price)].reduce((sum, elem)=> sum+=elem)} руб.</span>
+<span className={`text-[#1D1D1D] font-bold text-[2.0rem] sm:text-[1.2rem]`}>{[...state.array.map(el=>el.count * el.price)].reduce((sum, elem)=> sum+=elem)} руб.</span>
 </div>
 </div>
 <div className={`w-[100%] h-[80px] border-[3px] border-t-0 flex justify-between items-center`}>

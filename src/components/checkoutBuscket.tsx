@@ -11,7 +11,7 @@ export default function CheckoutBuscket() {
   }, [state.productsInBasket.length])
   return (
     <div
-      className={`flex flex-col w-[35%] min-h-[250px] max-h-[300px] bg-[#1D1D1D] justify-around`}
+      className={`flex flex-col w-[35%] min-h-[250px] max-h-[300px] bg-[#1D1D1D] justify-around sm:w-[100%]`}
     >
       <div
         className={`w-[40%] h-[50px] text-white flex items-center align-center w-[100%] ml-5`}

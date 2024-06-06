@@ -10,7 +10,7 @@ export default function BurgerMenu(){
 const MobileMenuState = useSelector((state: RootState)=> state.SliceModal.mobileMenu) 
 const dispatch = useDispatch()
     return(
-<div className={`w-[100%] h-[50px] bg-black fixed z-40 flex justify-end pr-5 items-center`}>
+<div className={`hidden w-[100%] h-[50px] bg-black fixed z-40 flex justify-end pr-5 items-center sm:flex`}>
 <div
           className={`w-[10%] flex justify-around items-center sm:flex-col-reverse sm:w-[50%]`}
         >
@@ -25,11 +25,11 @@ const dispatch = useDispatch()
             <div
               className={`flex justify-center w-[30px] h-[30px] bg-[red] rounded-full ml-3 items-center text-white uppercase text-[1.5rem]`}
             >
-              {state.array.length
+              <p>{state.array.length
                 ? state.array
                     .map((elem) => elem.count)
                     .reduce((sum, item) => sum + item)
-                : 0}
+                : 0}</p>
             </div>
           </Link>
         </div>

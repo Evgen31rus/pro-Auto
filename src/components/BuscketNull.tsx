@@ -20,10 +20,10 @@ export default function BuscketNull(){
               }}
             ></div>
 
-            <div className=' flex flex-col w-[59%] h-[80%] justify-around sm:h-[60%]'>
+            <div className=' flex flex-col w-[59%] h-[80%] justify-around sm:h-[60%] sm:w-[100%] sm:items-center'>
                 <h2 className='text-[1.4rem] font-medium '>Ваша корзина пуста</h2>
-            <span className='flex w-[100%]'>Исправить это просто: выберите в каталоге интересующий товар и нажмите кнопку «В корзину»</span>
-            <Link to={`/Каталог`} className='w-[150px] h-[40px] border-[2px] border-[#C53720]'>
+            <span className='flex w-[100%] sm:text-center'>Исправить это просто: выберите в каталоге интересующий товар и нажмите кнопку «В корзину»</span>
+            <Link to={`/Каталог`} className='w-[150px] h-[40px] border-[2px] border-[#C53720] sm:w-[250px]'>
 <MainButton textContent='В КАТАЛОГ' textColor='[#C53720]'/>
 
             </Link>

@@ -18,7 +18,7 @@ export default function FormModal(){
 
         <form 
       onSubmit={handleSubmit((data)=>{dispatch( HandleFormDiagnostic(data))})}
-      className="flex flex-col w-[90%] h-[100%]">
+      className="flex flex-col w-[90%] h-[100%] sm:justify-around">
         <label
           htmlFor={`name`}
           className={`flex flex-col h-[80px] justify-around font-medium`}

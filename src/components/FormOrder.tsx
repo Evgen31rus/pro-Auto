@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { HandleSabmitForm } from "../store/SliceForm";
 import MainButton from "./MainButton";
 import { HandleRemoveAllProducts } from "../store/SliceStoreBuscket";
+import { RootState } from "../store/store";
 
 export default function FormOrder(){
     const [isClick, setIsClick] = useState<boolean>(false);
   const dispatch=useDispatch()
+  const state=useSelector((state:RootState)=>state.sliseForm.form.eMail?.length)
   const HandleIsClickCheckBox = () => {
     setIsClick(!isClick);
   };
@@ -19,11 +21,13 @@ export default function FormOrder(){
     mode:'onBlur'
   }
   );
+
+
     return(
         <>
            <form 
         onSubmit={handleSubmit((data)=>dispatch(HandleSabmitForm(data)))}
-        className="flex flex-col w-[40%] h-[100%]">
+        className="flex flex-col w-[40%] h-[100%] sm:w-[100%]">
           <h2 className={`text-[1.2rem] font-medium mb-5`}> Получатель</h2>
           <label
             htmlFor={`name`}
@@ -119,6 +123,11 @@ maxLength: {value:15, message: 'Поле не может превышать бо
           >
             <div
               className={`w-[40%] h-[40px] border-[2px] border-[#C53720] mt-3`}
+              onClick={()=>{
+                setTimeout(()=>{
+dispatch(HandleRemoveAllProducts())
+                },100)
+              }}
             >
               <MainButton
                 textColor={"[#C53720]"}

@@ -75,12 +75,15 @@ const data = {
   mesage: action.payload,
 }
 state.formServies = data
+     },
+     HandleRemoveNumberOrder: (state)=>{
+      state.numberOrder = null
      }
    }
  })
  
 
 
-export const {  HandleSabmitForm, HandleFormDiagnostic } = sliseForm.actions
+export const {  HandleSabmitForm, HandleFormDiagnostic, HandleRemoveNumberOrder } = sliseForm.actions
 
 export default sliseForm.reducer

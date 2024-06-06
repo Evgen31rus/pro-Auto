@@ -66,8 +66,8 @@ if(stateCount.array.filter(element => element.id === product.id)[0]){
       className={` absolute transition-all duration-300 
         ${
           fullView
-            ? "flex w-[90%] max-h-[400px] mt-2 mb-2 justify-between p-5 "
-            : "flex-col w-[30%] min-h-[400px] max-h-[460px] p-5 pt-10 mr-3 ml-3 mb-5 sm:w-[90%] sm:h-[500px] "
+            ? "flex w-[90%] max-h-[450px] mt-2 mb-2 justify-between p-5 "
+            : "flex-col w-[30%] min-h-[450px] max-h-[460px] p-5 pt-10 mr-3 ml-3 mb-5 sm:w-[90%] sm:h-[500px] "
         } 
         ${product.Availability ? " border-[#3CC051]" : "border-[#C53720]"}
           border-[3px] relative bg-white overflow-hidden`}

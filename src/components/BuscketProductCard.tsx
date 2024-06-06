@@ -45,7 +45,7 @@ if(count<10){
   return (
     
     <div
-      className={`flex w-[100%] h-[200px]  border-[3px] items-center justify-between relative pl-5`}
+      className={`flex w-[100%] h-[200px]  border-[3px] items-center justify-between relative pl-5 sm:flex-col sm:h-[500px] sm:pb-5 sm:mb-5 sm:pt-5`}
     >
       <div  onClick={()=>dispatch(HandleRemoveProducts(product))}>
       <HandySvg src={svg} width={`20px`}  height={`20px`} className={`absolute right-[1%] top-[5%] cursor-pointer`} />
@@ -53,38 +53,38 @@ if(count<10){
       
         <>
           <div
-            className={`flex  w-[19%] h-[50%] bg-cover bg-center m-auto `}
+            className={`flex  w-[19%] h-[50%] bg-contain bg-no-repeat bg-center m-auto sm:w-[90%] sm:h-[40%]`}
             style={{
               backgroundImage: `url(${product.photo})`,
             }}
           ></div>
           <div
-            className={`flex flex-col w-[30%] h-[100%] items-center justify-center ml-3 text-center`}
+            className={`flex flex-col w-[30%] h-[100%] items-center justify-center ml-3 text-center sm:w-[100%] sm:h-[40%] sm:justify-around`}
           >
             <h1 className={`text-[1.5rem] text-[#C53720] font-medium mb-3 `}>
               {product.name}
             </h1>
             <div
-              className={`flex justify-center items-center w-[100px] h-[35px] bg-[#3CC051] text-white`}
+              className={`flex justify-center items-center w-[100px] h-[35px] bg-[#3CC051] text-white sm:hidden`}
             >
               {product.Availability ? "В наличии" : "Под заказ"}
             </div>
           </div>
           <div
-            className={`flex flex-col w-[25%] h-[100%] items-center justify-center `}
+            className={`flex flex-col w-[25%] h-[100%] items-center justify-center  sm:w-[100%] sm:h-[30px] sm:hidden`}
           >
             <h2 className={`text-[1.5rem] text-black font-medium mb-3`}>
               {product.price} руб.
             </h2>
             <h2
-              className={`text-[1.2rem] text-[#A5A5A5] font-medium mb-3 line-through`}
+              className={`text-[1.2rem] text-[#A5A5A5] font-medium mb-3 line-through sm:hidden`}
             >
               {product.priceSale} руб.
             </h2>
           </div>
 
           <div
-            className={`flex justify-between items-center w-[20%] h-[45px] sm:h-[20px]`}
+            className={`flex justify-between items-center w-[20%] h-[45px] sm:h-[20px] sm:w-[50%] sm:h-[40px]`}
           >
             <div
               className={`flex justify-center items-center w-[30%] h-[100%] border-[3px]  border-[#A5A5A5] cursor-pointer text-[#A5A5A5] hover:text-white hover:bg-[#A5A5A5] transition-[background] duration-300`}
@@ -110,7 +110,7 @@ if(count<10){
             </div>
           </div>
           <div
-            className={`flex flex-col w-[25%] h-[100%] items-center justify-center`}
+            className={`flex flex-col w-[25%] h-[100%] items-center justify-center sm:h-[100px] sm:w-[100%] `}
           >
             <h2 className={`text-[1.5rem] h-[17%] text-black font-medium mb-3`}>
               {product.price*count} руб.

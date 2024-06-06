@@ -34,7 +34,7 @@ const state = useSelector((state:RootState)=>state.sliseForm)
        <h1>ОФОРМЛЕНИЕ ЗАКАЗА</h1>
 {
   state.numberOrder===null?
-    <div className={`flex w-[100%] justify-around items-center p-5`}>
+    <div className={`flex w-[100%] justify-around items-center p-5 sm:flex-col`}>
 <FormOrder/>
 <CheckoutBuscket />
   </div> 
