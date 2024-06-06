@@ -33,7 +33,7 @@ setTimeout(()=>{
             <Link to={'/Каталог'} className={`w-[45%] h-[40px] sm:w-[80%]`}>
                 <MainButton textColor='[#C53720]' textContent='В КАТАЛОГ'/>
             </Link >
-            <Link to={'/'} className={`w-[45%] h-[40px]  sm:w-[80%]`}>
+            <Link to={'/pro-Auto'} className={`w-[45%] h-[40px]  sm:w-[80%]`}>
                 <MainButton textColor='[#C53720]' textContent='НА ГЛАВНУЮ'/>
             </Link >
         </div>

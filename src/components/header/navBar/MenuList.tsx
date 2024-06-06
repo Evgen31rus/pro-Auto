@@ -18,7 +18,7 @@ export default function MenuList({ list,index }: propsTypes) {
   
   return (
   <>
-    <Link to={list==='ГЛАВНАЯ'? '/':list}
+    <Link to={list==='ГЛАВНАЯ'? '/pro-Auto':list}
       className={` text-[0.8rem] text-white flex w-[300px] justify-center cursor-pointer relative sm:text-black  sm:w-[100%] sm:text-[1.9rem] sm:justify-start sm:pl-5 sm:mb-5 sm:mt-5`}
       onMouseOver={() => setIsOpenDropDown(true)}
       onMouseOut={() => setIsOpenDropDown(false)}

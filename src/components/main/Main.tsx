@@ -20,7 +20,7 @@ export default function Main(){
     const ArrayBuscket = state.StoreBuscket.array.length
 
     const routes = [
-        {path:'/', Component: <MainPage/>},
+        {path:'/pro-Auto', Component: <MainPage/>},
         {path:'Каталог', Component: <CatalogPage/>},
         {path:'Корзина', Component: <Buscket/>},
         // {path:'Оформить_заказ', Component: ArrayBuscket? <Checkout/> : null},

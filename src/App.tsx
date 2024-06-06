@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from './store/store';
 import MobileMenu from './components/MobileMenu';
 import BurgerMenu from './components/BurgerMenu';
+import { useLocation } from 'react-router-dom';
 
 
 
@@ -15,8 +16,9 @@ import BurgerMenu from './components/BurgerMenu';
 
 
 function App() {
-
+ const location = useLocation()
   const isOpenModal = useSelector((state:RootState)=>state.SliceModal.modal.status)
+  console.log(location.pathname)
   return (
 
     <div className="relative w-[100%] overflow-y-hidden flex-col flex items-center bg-black font-medium ">
