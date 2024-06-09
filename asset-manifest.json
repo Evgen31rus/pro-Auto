@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/pro-Auto/static/css/main.0c5a059e.css",
-    "main.js": "/pro-Auto/static/js/main.517c55bc.js",
+    "main.js": "/pro-Auto/static/js/main.e3cb96e4.js",
     "static/js/453.fd2e3383.chunk.js": "/pro-Auto/static/js/453.fd2e3383.chunk.js",
     "static/media/mainBaner.png": "/pro-Auto/static/media/mainBaner.f6d20a885b7109be0a2e.png",
-    "static/media/баннер 404 2.png": "/pro-Auto/static/media/баннер 404 2.1f749dceeee329a95993.png",
     "static/media/servies.png": "/pro-Auto/static/media/servies.03060f5dd3a774478de3.png",
     "static/media/фон.png": "/pro-Auto/static/media/фон.f4e58f60200afe04cf04.png",
     "static/media/диагностика 2.png": "/pro-Auto/static/media/диагностика 2.d1c6882f57eeb4f7744c.png",
@@ -51,11 +50,11 @@
     "static/media/laptop.svg": "/pro-Auto/static/media/laptop.ef7117d4da9536a56f03fc964de27df5.svg",
     "static/media/arrowCatalog.svg": "/pro-Auto/static/media/arrowCatalog.6a888f55da04b01969c505215da4d659.svg",
     "main.0c5a059e.css.map": "/pro-Auto/static/css/main.0c5a059e.css.map",
-    "main.517c55bc.js.map": "/pro-Auto/static/js/main.517c55bc.js.map",
+    "main.e3cb96e4.js.map": "/pro-Auto/static/js/main.e3cb96e4.js.map",
     "453.fd2e3383.chunk.js.map": "/pro-Auto/static/js/453.fd2e3383.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c5a059e.css",
-    "static/js/main.517c55bc.js"
+    "static/js/main.e3cb96e4.js"
   ]
 }
